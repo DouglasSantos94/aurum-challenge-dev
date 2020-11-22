@@ -37,7 +37,4 @@ const lettersSum = (string1, string2) => {
     return charIndexes1 && charIndexes2 ? sum(charIndexes1, charIndexes2) : 'Caracter inválido encontrado!';
 }
 
-
-console.log(lettersSum("dacb", "gdab"));
-console.log(lettersSum("dçb", "gdab"));
-console.log(lettersSum("dacb", "gdãb"));
+export default lettersSum;
