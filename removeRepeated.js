@@ -1,27 +1,28 @@
+const validLimit = (limit) => !isNaN(limit) && limit >= 0;
+
 /**
  * @param {string} string  
  * @param {number} limit 
  * @return {string}  
  */
-
- // recebe 2 parametros, string e int
- // o int indica o numero maximo de vezes que cada caracter pode ser repetido em sequencia
- // retorna uma string
- // fazer uma função que ve se o proximo caracter é repetido e o numero de vezes permitidas foi atingido; se sim, pular para o proximo
 const removeRepeated = (string, limit) => {
-    let formatedString = '';
+    if (!validLimit(limit)) {
+        return 'O limite deve ser um número válido!';
+    }
+
+    let formattedString = '';
     let count = 0;
     let index = 0;
-    let lastChar = '';
+    let latestChar = '';
     while(index < string.length) {
-        string[index] == lastChar ? count++ : count = 0;
+        string[index] == latestChar ? count++ : count = 0;
         if (count < limit) {
-            formatedString += string[index];
+            formattedString += string[index];
         }
-        lastChar = string[index];
+        latestChar = string[index];
         index++;
     }
-    return formatedString;
+    return formattedString;
 }
 
 export default removeRepeated;
