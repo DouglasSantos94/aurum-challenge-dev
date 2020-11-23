@@ -19,7 +19,7 @@ const replaceChar = (string, times) => {
     let aux = string;
     while (index < string.length) {
         if (string[index] == '?') {
-            formattedString += firstChar(index) ? getLastValidChar(aux) : latestChar.repeat(times);
+            formattedString += firstChar(index) ? getLastValidChar(aux).repeat(times) : latestChar.repeat(times);
         } else {
             formattedString += string[index];
             latestChar = string[index];
