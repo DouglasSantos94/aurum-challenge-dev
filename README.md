@@ -4,9 +4,14 @@ Instruções:
 
 Fazer o clone via Github: 
  - Clicar na opção Code -> Download ZIP;
- - Extrair na sua máquina;
- - 
+ - Extrair na sua máquina.
 
-Para utilizar as funções em arquivos externos, basta inserir o seguinte comando na primeira linha do arquivo onde deseja utilizar:
+Clone via terminal:
+ - Em um terminal, digite o comando: git clone https://github.com/DouglasSantos94/aurum-challenge-dev
 
-import nomeDaFunção from 'caminhoParaOArquivoDaFunção.js';
+Testar as funções:
+ - Navegar até o diretório baixado;
+ - Criar um arquivo .js;
+ - Importar as funções dentro desse arquivo (inserir o comando import nomeDaFunção from 'caminhoParaOArquivoDaFunção.js';) na primeira linha do arquivo criado;
+ - Escrever os testes desejados;
+ - Para executar via terminal, basta utilizar o comando node nomeDoArquivoCriado.js.
